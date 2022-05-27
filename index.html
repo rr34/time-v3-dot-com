@@ -1,0 +1,82 @@
+<html>
+
+	<head>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+
+	<div id="graphicClockArea" align="center">
+	  <img class="graphicClockImage" id="stars" src="L1 night sky.png">
+	  <img class="graphicClockImage" id="eHorizon" src="L2a timecard and E horiz.png">
+	  <img class="graphicClockImage" id="wHorizon" src="L2b W horiz.png">
+	  <img class="graphicClockImage" id="earthLongitudeMarks" src="L3a longitude marks.png">
+	  <img class="graphicClockImage" id="observer" src="L3b observer on Earth and center.png">
+	  <img class="graphicClockImage" id="moonHand" src="L4 moon.png">
+	  <img class="graphicClockImage" id="sunHand" src="L5 sun.png">
+	  <div id="spaceHolder">
+	  </div>
+	</div>
+
+
+
+	<div class="digitalClock" align="center">
+		<p id="displayDigital" /p>
+	</div>
+
+	<div class="title" align="center">
+		<p id="displayLocationTitle" /p>
+	</div>
+	
+	<div id="timeLapses" align="center">
+	Time Lapse Options. Refresh browser to clear animation. Not pausable, yet :(<br>
+	<button type="button" id="weekLapse">5,040x ~ Week per Two Minutes</button>
+	<button type="button" id="monthLapse">21,600x ~ Month per Two Minutes</button>
+	<button type="button" id="yearLapse">105,120x ~ Year per Five Minutes</button>
+	<label for="startLapseDate">Start Lapse on: </label>
+	<input type="date" id="startLapseDate">
+	</div>
+	
+	
+
+		<div class="aboutTimev3">
+		<h2>What is Time v3?</h2>
+		Time v1 is to look up into the sky and see how the day or night is progressing.<br><br>
+		Time v2 is what man created to fit time into mechanical timekeeping machines for navigation, train schedules, and global coordination. <a href="https://nathanruffing.com/about-industrial-time/" target="_blank" rel="noopener">Time v2 is industrial time</a>.<br><br>
+		Time v3 is the computer-enabled upgrade, measuring natural events accurately and simply to enable users to re-align their timekeeping and local coordination with nature. <a href="https://nathanruffing.com/aboutpostindustrialtime/" target="_blank" rel="noopener">Time v3 is post-industrial time</a>.
+		</div>
+
+		<div class="userLink">
+		<form name="Generate Link for Your Location" id="userLinkForm">
+		<h2>Generate Link</h2>
+		<p> A separate link is the only way to specify location for the clock. Generate here, share the link locally.<br></p>
+			<p> Location Name: <input type="text" id="userLinkName"> </p>
+			<p> Latitude: <input type="text" id="userLinkLat"> (Decimal format, north is positive.)</p>
+			<p> Longitude: <input type="text" id="userLinkLng"> (Decimal format, east is positive.) </p>
+			<input type=button value="Generate Link" onclick="userLinkGenerate()">
+		</form>
+		<p id="userLinkText" /p>
+		</div>
+		
+		<div class="timeLapseVideoArea">
+		<a href="https://nathanruffing.com/celestial-time-lapse-videos/" target="_blank">More time lapse videos, click here.<br><br></a>
+		<iframe src="https://player.vimeo.com/video/517490842" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+		<div class="moreLinks">
+		<a href="https://nathanruffing.com/timev3/" target="_blank">More clock links, click here.<br><br></a>
+		<a href="https://nathanruffing.com/timev3-read/" target="_blank">How to read the time v3 graphic clock, click here.<br><br></a>
+		<a href="https://nathanruffing.com/aboutpostindustrialtime/" target="_blank">About Time v3, click here.<br><br></a>
+		</div>
+
+
+	<script src="timevthreedotcom.js"></script>
+	<script src="timevthree.js"></script>
+	<script src="clockactions.js"></script>
+	<script src="suncalc.js"></script>
+
+	<script>
+	timevthreedotcom ();
+	</script>
+
+	</body>
+</html>

@@ -1,0 +1,59 @@
+
+#graphicClockArea {
+	position: relative;
+	width: 100vmin;
+	height: auto;
+	margin: auto;
+}
+
+.graphicClockImage {
+	position: absolute;
+	height: 90%;
+	width: auto;
+	left: 5%;
+	top: 5%;
+}
+
+#spaceHolder {
+	position: relative;
+	height: 90%;
+	width: auto;
+}
+
+.digitalClock {
+	height: 15vmin;
+	width: 80vmin;
+	margin: auto;
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-family: Rockwell;
+	font-size: 7.5vmin;
+
+}
+
+.title {
+	margin: auto;
+	text-align: center;
+	width: 90vw;
+	font-size: 2em;
+}
+
+
+.userLink {
+	width: 90vw;
+	height: 40%;
+}
+
+.timeLapseVideoArea {
+	height: 460;
+}
+
+@keyframes spinCW {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@keyframes spinCCW {
+    0% {transform: rotate(360deg);}
+    100% {transform: rotate(0deg);}
+}
